@@ -1,4 +1,4 @@
-package com.droidplusplus.sbnritaskapp.base
+package com.droidplusplus.sbnritaskapp.base.repository
 
 import android.util.Log
 import retrofit2.Response
@@ -22,9 +22,13 @@ open class BaseRepository {
     ): Output<T> {
         val response = call.invoke()
         return if (response.isSuccessful)
-            Output.Success(response.body()!!)
+            Output.Success(
+                response.body()!!
+            )
         else
-            Output.Error(IOException("OOps .. Something went wrong due to  $error"))
+            Output.Error(
+                IOException("OOps .. Something went wrong due to  $error")
+            )
     }
 }
 
