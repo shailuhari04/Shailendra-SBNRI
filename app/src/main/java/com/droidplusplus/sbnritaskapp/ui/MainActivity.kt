@@ -1,7 +1,8 @@
-package com.droidplusplus.sbnritaskapp
+package com.droidplusplus.sbnritaskapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.droidplusplus.sbnritaskapp.R
 
 class MainActivity : AppCompatActivity() {
 
